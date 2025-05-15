@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+Programmeur : EM Paulin
+date de derniere modification : 2025-05-12
+But: creer un nouveau formulaire au sujet de mon choix
+-->
+<html>
+    <head>
+        <title>Formulaire custom - Em</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 align = "center" >Formulaire custom -- Creer un personnage</h1>
+        <hr>
+        <form>
+            <fieldset>
+                <h3 align = "center"><em>information de base</em></h3>
+                <hr>
+                <table align = "center" cellpadding = "8" ><!-- information de base -->
+                    <tr>
+                        <td>
+                            <label for = "fnameTxt">Entrer un Prenom pour votre personnage: &nbsp;</label>
+                            <input type ="text" name ="fnameTxt" id ="fnameTxt" required>
+                        </td>
+                        <td>
+                            <label for = "lnameTxt">Entrer un nom pour votre personnage: &nbsp;</label>
+                            <input type ="text" name ="lnameTxt" id ="lnameTxt">
+                        </td>
+                        <td>
+                            <label for = "xnameTxt">Si votre personnage a autres nom ou titres, ajouter ici: &nbsp;</label>
+                            <input type ="text" name ="xnameTxt" id ="xnameTxt">
+                        </td>
+
+                    </tr> 
+                </table>
+                <hr>
+                <h3 align = "center"><em>Autre information pertinante au personnage</em></h3>
+                <hr>
+                <table cellpadding = "8" align ="center" >
+                    <tr>
+                        <td>
+                            <!-- type de personnages -->
+                            <label for = "spcLstBox">Espece: &nbsp;</label>
+                            <input type="text" list="spcOption" id ="spcLstBox" />
+                            <datalist id="spcOption">
+                                <option>humain</option>
+                                <option>extra-terrestre</option>
+                                <option>Ange</option>
+                                <option>Demon/Diablotin</option>
+                                <option>Robot</option>
+                                <option>Monstre</option>
+                                <option>sirene</option>
+                                <option>Fee</option>
+                                <option>centaure</option>
+                            </datalist>
+
+                        </td>
+                        <td>
+                            <!-- Classe de personnages -->
+                            <label>Classe primaire: &nbsp;</label>
+                            <select id = "classeSlct" name = "classeSlct">
+                                <option>Artificer</option>
+                                <option>Barbarian</option>
+                                <option>Bard</option>
+                                <option>Cleric</option>
+                                <option>Druid</option>
+                                <option>Fighter</option>
+                                <option>Monk</option>
+                                <option>Paladin</option>
+                                <option>Ranger</option>
+                                <option>Rogue</option>
+                                <option>Sorcerer</option>
+                                <option>Warlock</option>
+                                <option>Wizzard</option>
+                            </select>
+                        </td>
+                        <td>
+                            <table align = "center">
+                                <tr >
+                                    <td colspan = "2" align = "center"><label for = "multiTxtArea">MultiClass?</label> <br></td>
+                                </tr>
+                                <tr>
+                                    <td><label for = "multiOuiRd">Oui</label><input type ="radio" name ="multiRd" id ="multiOuiRd"></td>
+                                    <td><label for = "multiNonRd">Non</label><input type ="radio" name ="multiRd" id ="multiNonRd"></td>
+                                </tr>
+                            </table>
+                            
+                            
+                       
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+
+
+
+
+
+
+
+
+            </fieldset>
+        </form>
+
+    </body>
+</html>
